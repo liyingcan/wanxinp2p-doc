@@ -1,0 +1,5 @@
+较新的jdbc驱动可能会报出：java.sql.SQLException: The server time zone value '乱码' is unrecognized or represents more than one time zone
+
+需要修改mysql的时区，找到安装目录中的my.ini,
+在【mysqld】下添加default-time_zone = '+8:00'
+保存后重启mysql即可
